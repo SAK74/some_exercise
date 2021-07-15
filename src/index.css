@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Helvetica Neue LTStd-Md';
+  src: url('./HelveticaNeueLTStd-Md.otf');
+}
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue LTStd-Md', 'Helvetica Neue';
+
+}
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.main-container {
+  width: 978px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 79px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #d5d5d5;
+}
+.view{
+  width: 298px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 151px;
+}
+.view>span{
+  margin-left: 40px;
+  position: relative;
+  width: 105px;
+  font-size: 14px;
+}
+.view>span:first-child{
+  top: 8px;
+  left: 7px;
+  color: #FF801A;
+  margin: 0 !important;
+}
+.line{
+  position: absolute;
+  top: 24px;
+  left: 35px;
+}
+.user{
+  width: -1px;
+  display: flex;
+  align-items: center;
+  margin-left: 97px;
+}
+.user img:first-child{
+  margin-right: 8px;
+}
+.user img:last-child{
+  margin-left: 8px;
+}
+.main-table{
+  display: flex;
+  flex-direction: column;
+}
+.caption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 111px;
+  font-size: 9px;
+  color: #DBDBDB;
+}
+.progresImg{
+  margin: 12px 0 2px 0;
+}
+.progresImg+div{
+  word-spacing: 12px;
+}
+.week-container{
+  display: flex;
+  align-items: center;
+  margin-left: -19px;
+}
+.week{
+  font-size: 48px;
+  color: #FF801A;
+  margin: 0 43px 0 46px;
+}
+.protein-option{
+  position: relative;
+  left: 6px;
+  top: 0px;
+}
+.caption button{
+  background-color: transparent;
+  border: thin solid #dbdbdb;
+  border-radius: 4px;
+  height: 44px;
+  transition: .4s;
+
+}
+.protein-option div:last-child{
+  position: relative;
+  top: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 215px;
+}
+.vertical {
+  transform: rotate(-90deg);
+  font-size: 35px;
+  color: #d9d9d9;
+}
+.vertical+img{
+  position: relative;
+  top: 73px;
+}
+table {
+  border-collapse: collapse;
+  background-color: white;
+  font-size: 13px;
+  color: #828282;
+  table-layout: fixed;
+  width: 100%;
+}
+.gray {
+  background-image: url('./back_gray.jpg');
+}
+col.border {
+  border: medium solid #ff801a;
+}
+.active {
+  color:black;
+}
+th.first-row{
+  border: none;
+  border-left: 2px solid #d9d9d9;
+  height: 44px;
+  font-size: 24px;
+  color: #adbb0c;
+  padding: 0 -1px;
+}
+.last{
+    position: initial;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+  }
+.last>span{
+  font-size: 18px;
+  position: relative;
+  left: 10px;
+  top: -4px;
+}
+.check2{
+  position: relative;
+  left: 14px;
+}
+.first-col{
+  width: 84px;
+}
+.AM{
+  position: relative;
+  top: 29px;
+  left: 2px;
+}
+.PM{
+  position: relative;
+  top: -14px;
+  left: 2px;
+}
+td.free{
+  top: 69px;
+  left: 2px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  cursor: auto;
+}
+th.active {
+  color: orange;
+}
+.features{
+  column-count: 3;
+  column-rule: medium solid gray;
+  column-gap: 64px;
+}
+th{
+  border-bottom: 2px solid #d9d9d9;
+}
+td {
+  width: 118px;
+  position: relative;
+  top: 12px;
+  left: 9px;
+  vertical-align: top;
+  height: 88px;
+  border: 2px solid #d9d9d9;
+  white-space: break-spaces;
+  line-height: 18px;
+}
+
+.check{
+  position: absolute;
+  left: -34px;
+  top: -4px;
+}
+.features{
+  margin-top: 51px;
+  color: #828282;
+  column-count: 3;
+  column-rule: medium solid #dbdbdb;
+  grid-column-gap: 90px;
+  column-gap: 90px;
+  font-size: 15px;
+  line-height: 21px;
+}
+.features h2{
+  font-size: 28px;
+  line-height: 29px;
+}
+.features h2:first-child{
+  position: relative;
+  top: -21px;
+}
+.features p{
+    position: relative;
+    top: -6px;  
+}
+p.first_section{
+  position: relative;
+  top: -28px;
+}
+.view>span, .user, button, td.active, th.first-row, .weight, .print{
+  cursor: pointer;
+}
+td.active, th.first-row{
+  transition: .4s;
+}
+td.active:hover, th.first-row:hover, .caption button:hover{
+  transform: scale(1.1);
+}
