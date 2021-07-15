@@ -1,10 +1,24 @@
 @font-face {
-  font-family: 'Helvetica Neue LTStd-Md';
-  src: url('./HelveticaNeueLTStd-Md.otf');
+  font-family: HelveticaNeueLTStd;
+  src: url('./Fonts/HelveticaNeueLTStd-Roman.otf');
+}
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: url('./Fonts/HelveticaNeueLTStd-Md.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: url('./Fonts/HelveticaNeueLTStd-Bd.otf');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: HelveticaNeueLTStd-Lt;
+  src: url('./Fonts/HelveticaNeueLTStd-Lt.otf');
 }
 body {
   margin: 0;
-  font-family: 'Helvetica Neue LTStd-Md', 'Helvetica Neue';
+  font-family: HelveticaNeueLTStd;
 
 }
 .main {
@@ -22,6 +36,7 @@ body {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #d5d5d5;
+  color: #7c7c7c;
 }
 .view{
   width: 298px;
@@ -52,6 +67,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 97px;
+  font-size: 15px;
 }
 .user img:first-child{
   margin-right: 8px;
@@ -69,7 +85,7 @@ body {
   align-items: center;
   height: 111px;
   font-size: 9px;
-  color: #DBDBDB;
+  color: #bdbdbd;
 }
 .progresImg{
   margin: 12px 0 2px 0;
@@ -110,8 +126,11 @@ body {
 }
 .vertical {
   transform: rotate(-90deg);
+  font-family: HelveticaNeueLTStd-Lt;
   font-size: 35px;
   color: #d9d9d9;
+  position: relative;
+  top: -10px;
 }
 .vertical+img{
   position: relative;
@@ -121,6 +140,7 @@ table {
   border-collapse: collapse;
   background-color: white;
   font-size: 13px;
+  font-family: Arial;
   color: #828282;
   table-layout: fixed;
   width: 100%;
@@ -143,6 +163,7 @@ th.first-row{
   padding: 0 -1px;
 }
 .last{
+    font-family: HelveticaNeueLTStd;
     position: initial;
     text-align: center;
     vertical-align: middle;
@@ -182,11 +203,6 @@ td.free{
 th.active {
   color: orange;
 }
-.features{
-  column-count: 3;
-  column-rule: medium solid gray;
-  column-gap: 64px;
-}
 th{
   border-bottom: 2px solid #d9d9d9;
 }
@@ -201,7 +217,6 @@ td {
   white-space: break-spaces;
   line-height: 18px;
 }
-
 .check{
   position: absolute;
   left: -34px;
@@ -212,12 +227,12 @@ td {
   color: #828282;
   column-count: 3;
   column-rule: medium solid #dbdbdb;
-  grid-column-gap: 90px;
   column-gap: 90px;
   font-size: 15px;
   line-height: 21px;
 }
 .features h2{
+  letter-spacing: -1px;
   font-size: 28px;
   line-height: 29px;
 }
@@ -228,6 +243,7 @@ td {
 .features p{
     position: relative;
     top: -6px;  
+    font-family: Arial;
 }
 p.first_section{
   position: relative;

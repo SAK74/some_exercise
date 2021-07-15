@@ -12,6 +12,7 @@ export default function MainApp() {
     for (let i = 1; i < 85; i++) temp[i] = [];
     return temp;
   });
+  // eslint-disable-next-line
   const [any, setAny] = useState();
   const line = <img className = "line" src = ".\PNG\line.png" alt = "line"/>;
 
@@ -221,7 +222,7 @@ for (let k = 0; k < 8; k++){
                 <h2>Running out of products?</h2>
                 <p className = "first_section">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
                 <Button>Buy now &nbsp;<img src = ".\PNG\arrow.png" alt= ""/></Button>
-              <h2>Bod•ē Trainer in <br/>your pocket</h2>
+              <h2>Bod•e Trainer in <br/>your pocket</h2>
               <p>Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
                 <IOS><img src = ".\PNG\IOS.png" alt= ""/></IOS>
                 <Android><img src = ".\PNG\Android.png" alt= ""/></Android>
