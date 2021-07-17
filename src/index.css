@@ -77,7 +77,7 @@ body {
 }
 .user_menu{
   width: 199px;
-  height: 132px;
+  height: 150px;
   position: absolute;
   top: 61px;
   left: -68px;
@@ -86,8 +86,7 @@ body {
   align-items: center;
   border: thin solid gray;
   border-radius: 4px;
-  background-color: #efefef;
-  line-height: 24px;
+  line-height: 32px;
   z-index: 999;
   cursor: default;
   background-color: rgb(239 239 239 / 80%);
@@ -97,13 +96,13 @@ body {
   margin: 10px;
 }
 .user_menu>div{
-  width: 95%;
-  padding-left: 2%;
+  width: 85%;
+  padding-left: 5%;
   cursor: pointer;
 }
 .user_menu>div:hover{
-    background-color: #cfcfcf;
-}
+  background-color: #cfcfcf;
+  border-radius: 28px;}
 .main-table{
   display: flex;
   flex-direction: column;
