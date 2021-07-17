@@ -150,8 +150,8 @@ for (let k = 0; k < 8; k++){
                   <div onClick = {handleUserSet}>
                     <div className = "user_menu" style = {{visibility: "hidden"}}>
                       <img src = {user.src} alt= "user_photo"/>
-                      <div onClick = {handleMenu}>options</div>
-                      <div onClick = {handleMenu}>logout</div>
+                      <div>options</div>
+                      <div>logout</div>
                     </div>
                     {user.name}
                     <img src = ".\PNG\select.png" alt= ""/>
