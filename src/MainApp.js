@@ -4,7 +4,9 @@ import {Button, IOS, Android} from './styles';
 
 export default function MainApp() {
 
-  const user = {id: 1, name: "Olivia Wilde", src: './PNG/photo.png'};
+  // const user = {id: 1, name: "Olivia Wilde", src: './PNG/photo.png'};
+  // eslint-disable-next-line
+  const [user, setUser] = useState({id: 1, name: "Olivia Wilde", src: './PNG/photo.png'});
   const [colActive, setColActive] = useState(2);
   const [week, setWeek] = useState(9);
   const [checks, setChecks] = useState(() => {
@@ -128,6 +130,10 @@ for (let k = 0; k < 8; k++){
     progres.push(<img key = {i} src = {currentPng} alt = ""/>);
   }
 
+  const handleUserSet = ev => {
+    ev.target.firstChild.style.visibility = ev.target.firstChild.style.visibility === "hidden" ? "visible" : "hidden";
+  }
+
   return (
     <>
           <div className = "header">
@@ -139,9 +145,17 @@ for (let k = 0; k < 8; k++){
                 <span>CHALLENGE </span>
               </div>  
               <span className = 'user'>
-                  <img src = {user.src} alt = 'user'/>
-                {user.name}
-                <img src = ".\PNG\select.png" alt= ""/>
+                  <img src = {user.src} alt = 'user_photo'/>
+                  <div onClick = {handleUserSet}>
+                    <div className = "user_menu" style = {{visibility: "hidden"}}>
+                      <img src = {user.src} alt= "user_photo"/>
+                      <div>options</div>
+                      <div>logout</div>
+                    </div>
+                    {user.name}
+                    <img src = ".\PNG\select.png" alt= ""/>
+                  </div>
+                
               </span>
           </div>    
       <div className = "main">
