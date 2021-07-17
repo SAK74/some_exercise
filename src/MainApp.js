@@ -130,13 +130,9 @@ for (let k = 0; k < 8; k++){
     progres.push(<img key = {i} src = {currentPng} alt = ""/>);
   }
 
-  const handleUserSet = ev => {
+  const handleUserSet = () => {
     const menu = document.getElementsByClassName("user_menu")[0];
     menu.style.visibility = menu.style.visibility === "hidden" ? "visible" : "hidden";
-  }
-  const handleMenu = ev => {
-    ev.stopPropagation();
-    alert(ev.target.innerText);
   }
 
   return (
