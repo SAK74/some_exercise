@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './App.css';
 import {Button, IOS, Android} from './styles';
 
@@ -129,12 +129,12 @@ for (let k = 0; k < 8; k++){
     else currentPng = i === week ? './PNG/progr_act.png' : './PNG/progr.gray.png';
     progres.push(<img key = {i} src = {currentPng} alt = ""/>);
   }
-
+  
+  const menuUserRef = useRef();
   const handleUserSet = () => {
-    const menu = document.getElementsByClassName("user_menu")[0];
-    menu.style.visibility = menu.style.visibility === "hidden" ? "visible" : "hidden";
+    menuUserRef.current.style.visibility = menuUserRef.current.style.visibility === "hidden" ? "visible" : "hidden";
   }
-
+  
   return (
     <>
           <div className = "header">
@@ -148,10 +148,10 @@ for (let k = 0; k < 8; k++){
               <span className = 'user'>
                   <img src = {user.src} alt = 'user_photo'/>
                   <div onClick = {handleUserSet}>
-                    <div className = "user_menu" style = {{visibility: "hidden"}}>
+                    <div className = "user_menu" style = {{visibility: "hidden"}} ref = {menuUserRef}>
                       <img src = {user.src} alt= "user_photo"/>
-                      <div>options</div>
-                      <div>logout</div>
+                      <div onClick = {() => alert("do something...")}>options</div>
+                      <div onClick = {() => alert(" logout...")}>logout</div>
                     </div>
                     {user.name}
                     <img src = ".\PNG\select.png" alt= ""/>
