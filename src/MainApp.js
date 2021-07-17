@@ -131,7 +131,12 @@ for (let k = 0; k < 8; k++){
   }
 
   const handleUserSet = ev => {
-    ev.target.firstChild.style.visibility = ev.target.firstChild.style.visibility === "hidden" ? "visible" : "hidden";
+    const menu = document.getElementsByClassName("user_menu")[0];
+    menu.style.visibility = menu.style.visibility === "hidden" ? "visible" : "hidden";
+  }
+  const handleMenu = ev => {
+    ev.stopPropagation();
+    alert(ev.target.innerText);
   }
 
   return (
@@ -149,8 +154,8 @@ for (let k = 0; k < 8; k++){
                   <div onClick = {handleUserSet}>
                     <div className = "user_menu" style = {{visibility: "hidden"}}>
                       <img src = {user.src} alt= "user_photo"/>
-                      <div>options</div>
-                      <div>logout</div>
+                      <div onClick = {handleMenu}>options</div>
+                      <div onClick = {handleMenu}>logout</div>
                     </div>
                     {user.name}
                     <img src = ".\PNG\select.png" alt= ""/>

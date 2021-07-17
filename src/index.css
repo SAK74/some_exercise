@@ -80,7 +80,7 @@ body {
   height: 132px;
   position: absolute;
   top: 61px;
-  left: 12px;
+  left: -68px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +278,7 @@ p.first_section{
   position: relative;
   top: -28px;
 }
-.view>span, .user, button, td.active, th.first-row, .weight, .print{
+.view>span, .user>div, button, td.active, th.first-row, .weight, .print, .protein-option>div:last-child *{
   cursor: pointer;
 }
 td.active, th.first-row{
